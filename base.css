@@ -152,7 +152,8 @@ h2::after {
 }
 
 .meta-link {
-    color: var(--light-bg);
+    color: var(--light-bg) ;
+    /* color: var(--light-bg); */
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
@@ -161,9 +162,9 @@ h2::after {
     transition: all 0.3s ease;
 }
 
-.meta-link:hover {
+.meta-link:hover a{
     color: var(--primary-color);
-    background-color: var(--secondary-color);
+    background-color: var(--light-bg);
 }
 
 /* Stats Section */
@@ -254,6 +255,10 @@ h2::after {
 }
 
 
+.media-icon {
+    width: 40px;
+    height: 40px;
+}
 
 /* Desktop Navigation */
 #menu-button {
@@ -368,8 +373,8 @@ h2::after {
 }
 
 .footer-icon {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
     /* filter: brightness(0) invert(1); */
 }
